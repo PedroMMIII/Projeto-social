@@ -16,6 +16,7 @@ body {
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 main {
@@ -39,4 +40,30 @@ main {
     left: 22px;
     width: 269px;
     height: 471px;
+}
+
+#redes-sociais {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+#redes-sociais img { 
+    width: 4%;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400)
+}
+
+#redes-sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-3px -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, border 0.7s;
+}
+
+@media (max-width: 999px) {
+    #redes-sociais img {
+        width: 8%;
+    }
 }
